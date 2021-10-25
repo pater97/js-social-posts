@@ -1,0 +1,10 @@
+/* impostazioni di reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* general */
+body{
+    background-color: blueviolet;
+}
