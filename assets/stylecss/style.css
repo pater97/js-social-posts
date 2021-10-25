@@ -16,7 +16,7 @@ main{
 .container{
     margin:auto;
     width: 60%;
-    background-color: white;
+    padding: 2rem 0;
 }
 img{
     width: 100%;

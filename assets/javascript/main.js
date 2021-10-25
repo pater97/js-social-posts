@@ -42,3 +42,31 @@ const posts = [
         numeLike: `80`
     }
 ]
+//selezionare una variabile per l'inserimento html
+const stamp = document.querySelector(`.container`)
+//ciclare l'arrey per estrapolare i valori
+for (let i = 0; i < posts.length; i++) {
+    const post = posts[i]
+    const element = `
+    <div class="card">
+    <div class="icon_container">
+        <img class="icon_image" src="${post.iconImage}"
+            alt="">
+        <div class="id_container">
+            <h3>${post.id}</h3>
+            <h6>${post.data}</h6>
+        </div>
+    </div>
+    <div class="content">
+        <p>
+        ${post.contenuto}
+        </p>
+        <img class="post_image" src="${post.immagine}" alt="">
+    </div>
+    <div class="button_counter">
+        <button>"mi piace"</button>
+        <div>numero di like: ${post.numeLike}</div>
+    </div>
+</div>`
+    stamp.innerHTML += element
+}
