@@ -52,4 +52,18 @@ img{
     display: flex;
     padding: 2rem;
     justify-content: space-between;
+    font-size: 1.3rem;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: rgb(49, 49, 49);
+    font-size: 1.3rem;
+}
+.fa-thumbs-up{
+    padding-right: .5rem;
+    color: rgb(133, 133, 133);
+}
+.button_counter span{
+    font-weight: bold;
 }
