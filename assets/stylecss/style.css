@@ -62,8 +62,10 @@ button{
 }
 .fa-thumbs-up{
     padding-right: .5rem;
-    color: rgb(133, 133, 133);
 }
 .button_counter span{
     font-weight: bold;
+}
+.click_btn{
+    color: blue;
 }

@@ -50,7 +50,7 @@ for (let i = 0; i < posts.length; i++) {
     const element = `
     <div class="card">
     <div class="icon_container">
-        <img class="icon_image" src="${post.iconImage}"
+        <img class="icon_image" onError="this.onerror=null;this.src='/images/noimage.gif';" src="${post.iconImage}"
             alt="">
         <div class="id_container">
             <h3>${post.id}</h3>
@@ -64,9 +64,13 @@ for (let i = 0; i < posts.length; i++) {
         <img class="post_image" src="${post.immagine}" alt="">
     </div>
     <div class="button_counter">
-        <button><i class="fas fa-thumbs-up"></i>mi piace</button>
+        <button class="like_button"><i class="fas fa-thumbs-up"></i>mi piace</button>
         <div>piace a <span>${post.numeLike}</span> persone</div>
     </div>
 </div>`
     stamp.innerHTML += element
 }
+const likeButton = document.querySelector(`.like_button`)
+likeButton.addEventListener(`click`, function () {
+    likeButton.classList.add("click_btn")
+})
